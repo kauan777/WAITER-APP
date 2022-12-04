@@ -6,11 +6,15 @@ export const Board = styled.div`
 
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	padding: 1rem;
 	border: 1px solid rgba(204, 204, 204, 0.4);
 	border-radius: 1rem;
 
-	header {
+// > element: significa que as estilizações só se aplicam se o elemento for filho direto do componente
+// Logo as estilizações não será adicionado a componentes filhos
+
+	> header {
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
